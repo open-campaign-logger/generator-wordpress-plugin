@@ -180,7 +180,7 @@ function cl_gen_access_shortcode($attr)
 {
     $id = $attr['id'];
 
-    return '<div>[<a href="javascript:clGenUpdateResult(\'' . $id . '\');">update</a>] <span id="cl-gen-id-' . $id . '">' . cl_gen_access_generate_with_id($id) . '</span></div>';
+    return '<div>[<a href="javascript:clGenUpdateResult(\'' . $id . '\');">update</a>] <div id="cl-gen-id-' . $id . '">' . cl_gen_access_generate_with_id($id) . '</div></div>';
 }
 
 function cl_gen_access_generate_with_id($id)
@@ -211,7 +211,7 @@ function cl_gen_access_generate($generatorJson)
     else {
         $json = $response['body'];
         $data = json_decode($json);
-        $resultText = $data->result;
+        $resultText = $data->htmlResult;
     }
 
     return $resultText;
