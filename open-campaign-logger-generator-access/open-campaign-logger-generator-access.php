@@ -3,7 +3,7 @@
 Plugin Name:  CL Generator Access Plugin
 Plugin URI:   https://github.com/open-campaign-logger/generator-wordpress-plugin
 Description:  Campaign Logger Generator Service available as WordPress plugin
-Version:      0.1
+Version:      0.2
 Author:       Jochen Linnemann
 Author URI:   http://jochenlinnemann.de/
 License:      Apache 2.0
