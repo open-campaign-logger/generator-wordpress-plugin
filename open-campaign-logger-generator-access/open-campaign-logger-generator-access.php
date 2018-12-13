@@ -193,7 +193,7 @@ function cl_gen_access_generate_with_id($id)
 
 function cl_gen_access_generate($generatorJson)
 {
-    $response = wp_remote_post("https://campaign-logger.com/generator", array(
+    $response = wp_remote_post("https://generator.campaign-logger.com", array(
         'method' => 'POST',
         'timeout' => 45,
         'redirection' => 5,
